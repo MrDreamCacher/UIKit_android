@@ -1,0 +1,54 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+        <item name="android:textColorPrimary">@color/font_green</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#ffff9431</item>
+        <item name="colorPrimaryDark">#ffD56600</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:displayOptions">homeAsUp</item>
+    </style>
+
+    <style name="flow_text_view_bg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@drawable/flow_text_view_bg</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!--底部窗口显示和消失动画-->
+    <style name="bottom_popup_style">
+        <item name="android:windowEnterAnimation">@anim/bottom_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/bottom_exit_anim</item>
+    </style>
+
+    <style name="bottom_dialog_style" parent="android:style/Theme.Dialog">
+        <!--窗口的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在activity之上,会造成match_parent失效-->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <style name="toolbar_popup_theme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:colorBackground">#ffff9438</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+</resources>

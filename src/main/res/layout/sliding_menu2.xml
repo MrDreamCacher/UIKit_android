@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zhaoshengqi.androidwidget.view.SlidingMenuView2
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slidingMenu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout
+        android:id="@+id/menu_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</zhaoshengqi.androidwidget.view.SlidingMenuView2>

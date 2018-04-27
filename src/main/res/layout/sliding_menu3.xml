@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zhaoshengqi.androidwidget.view.MyDrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:background="#44ff0000"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/id_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是内容"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/id_container_menu"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/id_menu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是菜单"
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+</zhaoshengqi.androidwidget.view.MyDrawerLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/system_bottom_sheet"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/system_bottom_sheet"/>
+
+    <Button
+        android:id="@+id/bottom_pop_window"
+        android:layout_below="@id/system_bottom_sheet"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/bottom_popup_window"/>
+
+    <Button
+        android:id="@+id/bottom_dialog"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bottom_pop_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/bottom_dialog"/>
+
+    <Button
+        android:id="@+id/bottom_navi_view"
+        android:layout_below="@id/bottom_dialog"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/bottom_navi_view"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navi_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/bg_color"
+        app:menu="@menu/bottom_navi"
+        app:itemTextColor="@color/bottom_navi_text_color"/>
+
+</RelativeLayout>
